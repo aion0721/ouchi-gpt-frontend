@@ -10,10 +10,21 @@
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
   font-size: 24px;
+  padding: 0 20px;
   flex-shrink: 0;
+}
+
+.clear-button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .chat-container {
@@ -50,6 +61,11 @@
   background-color: #ececec;
 }
 
+.loading {
+  color: #999;
+  font-style: italic;
+}
+
 .input-box {
   display: flex;
   padding: 10px;
@@ -66,6 +82,11 @@ input {
   margin-right: 10px;
 }
 
+input.disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -74,4 +95,9 @@ button {
   background-color: #282c34;
   color: white;
   cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
 }
